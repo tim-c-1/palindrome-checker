@@ -20,7 +20,8 @@ int main(){
     while (answer == "y"){
 
         std::cout << "enter a word to check if it is a palindrome: ";
-        std::cin >> word;
+        std::getline(std::cin, word);
+
         if (is_palindrome(word)){
         std::cout << "yes, that's a palindrome.\n";
         } else {
@@ -28,7 +29,7 @@ int main(){
         }
 
         std::cout << "want to check another? (y/n)";
-        std::cin >> answer;
+        std::getline(std::cin, answer);
 
     }
     
